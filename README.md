@@ -2,7 +2,7 @@
 # ArchLinux Fast reinstall v1.0.0 (EN)
 ###############################################################
 # Description
-This script will reinstall the system on already created partitions without formatting home in order to save personal data and files. 
+This script will reinstall the system on already created partitions without formatting home in order to save personal data and files. This script only works if the home partition is separate from the root partition.
 MBR markup with BIOS.
 
 sda1 boot | sda2 swap | sda3 root | sda4 extended | sda5 home 
@@ -57,7 +57,7 @@ sda5 home (no formatting)
 ###############################################################
 
 # Описание
-Этот скрипт переустановит систему на уже созданные разделы без форматирования home с целью сохранения личных данных и файлов
+Этот скрипт переустановит систему на уже созданные разделы без форматирования домашнего раздела home с целью сохранения личных данных и файлов. Работает только в том случае если вы выносили раздел home отдельно. 
 
 Разметка MBR c BIOS.
 
