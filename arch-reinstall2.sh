@@ -49,7 +49,7 @@ echo 'Include = /etc/pacman.d/mirrorlist' >> /etc/pacman.conf
 pacman -Syy
 
 echo 'Ставим иксы и драйвера'
-pacman -S xorg-server xorg-drivers
+pacman -S xorg-server xorg-drivers --noconfirm
 
 echo 'Ставим Xfce, LXDM'
 pacman -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
