@@ -13,7 +13,7 @@ Lightdm login screen
 
 This script is a fork of the ordanax / arch2018 script https://github.com/ordanax/arch2018
 
-Consists of 2 parts
+Consists of 2 parts: https://git.io/fjUo1  https://git.io/fjUoD
 
 # Installation
 1) Download and burn the Arch Linux ISO image on a USB flash drive https://www.archlinux.org/download/
@@ -68,7 +68,7 @@ sda1 boot | sda2 swap | sda3 root | sda4 extended | sda5 home
 
 Данный скрипт является форком скрипта ordanax/arch2018 https://github.com/ordanax/arch2018 
 
-Cостоит из 2 частей
+Cостоит из 2 частей: 1- https://git.io/fjUo1  |  2- https://git.io/fjUoD
 
 # Установка 
 1) Скачать и записать на флешку ISO образ Arch Linux https://www.archlinux.org/download/
