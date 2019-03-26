@@ -16,6 +16,7 @@ sda4 extended
 sda5 home 
 
 XFCE graphic environment 
+
 Lightdm login screen 
 
 This script is a fork of the ordanax / arch2018 script https://github.com/ordanax/arch2018
@@ -24,11 +25,13 @@ Consists of 2 parts
 
 # Installation
 1) Download and burn the Arch Linux ISO image on a USB flash drive https://www.archlinux.org/download/
+
 2) Download and run the script with the command:
    `` bash
    wget git.io/fjUo1 && sh fjUo1.sh
    `` `
    The installation of the minimum system with DE XFCE starts.
+   
    Part 2 is automatically installed and this is the basic installation of ArchLinux without programs and settings.
 
 
@@ -41,11 +44,17 @@ The author is not responsible for any harm when using the script. Use it at your
 
 Before starting, carefully check the disk layout used in this script and change it if necessary.
 Script is designed for re-installing ARCH LINUX with the MBR partitioning already created and formatting boot, swap, root partitions:
+
 sda1 boot (formatted)
+
 sda2 swap (formatted)
+
 sda3 root (formatted)
+
 sda4 extended
+
 sda5 home (no formatting)
+
 
 
 
@@ -55,12 +64,19 @@ sda5 home (no formatting)
 
 # Описание
 Этот скрипт переустановит систему на уже созданные разделы без форматирования home с целью сохранения личных данных и файлов
+
 Разметка MBR c BIOS.
+
 sda1 boot
+
 sda2 swap
+
 sda3 root
+
 sda4 extended
+
 sda5 home
+
 
 Графическое окружение XFCE
 Экран входа lightdm
@@ -71,11 +87,13 @@ Cостоит из 2 частей
 
 # Установка 
 1) Скачать и записать на флешку ISO образ Arch Linux https://www.archlinux.org/download/
+
 2) Скачать и запустить скрипт командой:
    ```bash 
    wget git.io/fjUo1 && sh fjUo1.sh
    ```
    Запустится установка минимальной системы с DE XFCE.
+   
    2-я часть ставится автоматически и это базовая установка ArchLinux без программ и настроек. 
 
 
@@ -87,15 +105,21 @@ Cостоит из 2 частей
 Автор не несет ответственности за любое нанесение вреда при использовании скрипта. Используйте его на свой страх и риск предварительно изучив и если нужно изменив под свои личные нужды.
 
 Перед запуском внимательно проверьте разметку диска которая используется в даннов скрипте и при надобности поменяйте под себя
+
 Скрипр расчитан на переустановку ARCH LINUX с уже созданной разметкой диска MBR и форматированием разделов boot, swap, root:
 sda1 boot (форматируется)
+
 sda2 swap (форматируется)
+
 sda3 root (форматируется)
+
 sda4 extended
+
 sda5 home (форматирование не производится)
 
 
 # История изменений
 
 ### 27.03.2019 Archlinux2019-reinstall v1.0.0
+
 - Релиз
