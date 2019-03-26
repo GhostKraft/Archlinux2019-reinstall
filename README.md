@@ -71,10 +71,11 @@ Cостоит из 2 частей
 
 # Установка 
 1) Скачать и записать на флешку ISO образ Arch Linux https://www.archlinux.org/download/
-
 2) Скачать и запустить скрипт командой:
 
-wget git.io/fjUo1 && sh fjUo1.sh
+   ```bash 
+   wget git.io/fjUo1.sh && sh fjUo1.sh
+   ```
 
 Запустится установка минимальной системы с DE XFCE.
 
