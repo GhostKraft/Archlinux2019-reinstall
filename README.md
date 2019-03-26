@@ -19,8 +19,10 @@ Consists of 2 parts
 1) Download and burn the Arch Linux ISO image on a USB flash drive https://www.archlinux.org/download/
 
 2) Download and run the script with the command:
-   
+
+   ``` bash
    wget git.io/fjUo1 && sh fjUo1.sh
+   ```
 
    The installation of the minimum system with DE XFCE starts.
    
@@ -73,7 +75,9 @@ Cостоит из 2 частей
 
 2) Скачать и запустить скрипт командой:
   
-   wget git.io/fjUo1 && sh fjUo1.sh
+     ``` bash
+   wget git.io/fjUo1 && sh fjUo1.sh
+   ```
 
    Запустится установка минимальной системы с DE XFCE.
    
