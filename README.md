@@ -1,13 +1,18 @@
-#################################################
+###############################################################
 # ArchLinux Fast reinstall v1.0.0 (EN)
-#################################################
+###############################################################
 # Description
 This script will reinstall the system on already created partitions without formatting home in order to save personal data and files. 
-MBR markup with BIOS. 
+MBR markup with BIOS.
+
 sda1 boot 
+
 sda2 swap 
-sda3 root 
+
+sda3 root
+
 sda4 extended 
+
 sda5 home 
 
 XFCE graphic environment 
