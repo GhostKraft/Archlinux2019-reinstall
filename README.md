@@ -20,10 +20,9 @@ Consists of 2 parts
 
 2) Download and run the script with the command:
 
-   ```bash
+   ``` bash
    wget git.io/fjUo1 && sh fjUo1.sh
    ```
-   
    The installation of the minimum system with DE XFCE starts.
    
    Part 2 is automatically installed and this is the basic installation of ArchLinux without programs and settings.
@@ -75,10 +74,9 @@ Cостоит из 2 частей
 
 2) Скачать и запустить скрипт командой:
   
-   ```bash
+   ``` bash
    wget git.io/fjUo1 && sh fjUo1.sh
    ```
-
    Запустится установка минимальной системы с DE XFCE.
    
    2-я часть ставится автоматически и это базовая установка ArchLinux без программ и настроек. 
