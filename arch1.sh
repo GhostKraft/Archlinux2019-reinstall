@@ -31,7 +31,7 @@ echo "Server = http://mirror.yandex.ru/archlinux/$repo/os/$arch" > /etc/pacman.d
 echo '3.2 Установка основных пакетов'
 pacstrap /mnt base base-devel
 
-echo '3.3 Настройка системы'
+echo '3.3 Настройка системы, создание FSTAB'
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt sh -c "$(curl -fsSL git.io/arch2.sh)"
