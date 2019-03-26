@@ -22,8 +22,8 @@ echo '2.4.3 Монтирование дисков'
 mount /dev/sda3 /mnt
 mkdir /mnt/{boot,home}
 mount /dev/sda1 /mnt/boot
-swapon /dev/sda2
 mount /dev/sda5 /mnt/home
+swapon /dev/sda2
 
 echo '3.1 Выбор зеркал для загрузки. Ставим зеркало от Яндекс'
 echo "Server = http://mirror.yandex.ru/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist
