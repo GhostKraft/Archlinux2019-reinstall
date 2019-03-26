@@ -17,10 +17,11 @@ Consists of 2 parts
 
 # Installation
 1) Download and burn the Arch Linux ISO image on a USB flash drive https://www.archlinux.org/download/
-
 2) Download and run the script with the command:
 
-wget git.io/fjUo1 && sh fjUo1.sh
+   ``` bash
+   wget git.io/fjUo1.sh && sh fjUo1.sh
+   ```
 
 The installation of the minimum system with DE XFCE starts.
    
