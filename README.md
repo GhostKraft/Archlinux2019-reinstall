@@ -20,15 +20,11 @@ Consists of 2 parts
 
 2) Download and run the script with the command:
 
+wget git.io/fjUo1 && sh fjUo1.sh
 
-   ``` bash
-   wget git.io/fjUo1 && sh fjUo1.sh
-   ```
+The installation of the minimum system with DE XFCE starts.
    
-
-   The installation of the minimum system with DE XFCE starts.
-   
-   Part 2 is automatically installed and this is the basic installation of ArchLinux without programs and settings.
+Part 2 is automatically installed and this is the basic installation of ArchLinux without programs and settings.
 
 
 # Customize the script for yourself
@@ -76,13 +72,12 @@ Cостоит из 2 частей
 1) Скачать и записать на флешку ISO образ Arch Linux https://www.archlinux.org/download/
 
 2) Скачать и запустить скрипт командой:
-  
- 
-   wget git.io/fjUo1 && sh fjUo1.sh
-  
-   Запустится установка минимальной системы с DE XFCE.
-   
-   2-я часть ставится автоматически и это базовая установка ArchLinux без программ и настроек. 
+
+wget git.io/fjUo1 && sh fjUo1.sh
+
+Запустится установка минимальной системы с DE XFCE.
+
+2-я часть ставится автоматически и это базовая установка ArchLinux без программ и настроек. 
 
 # Настройка скрипта под себя
 Вы можете форкнуть этот срипт. Изменить разметку дисков под свои нужды, залить его на Github и производить быструю переустановку вашей системы.
