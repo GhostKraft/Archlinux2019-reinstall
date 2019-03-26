@@ -1,5 +1,51 @@
 #################################################
-# ArchLinux Fast reinstall v1.0.0
+# ArchLinux Fast reinstall v1.0.0 (EN)
+#################################################
+# Description
+This script will reinstall the system on already created partitions without formatting home in order to save personal data and files.
+MBR markup with BIOS.
+sda1 boot
+sda2 swap
+sda3 root
+sda4 extended
+sda5 home
+
+XFCE graphic environment
+Lightdm login screen
+
+This script is a fork of the ordanax / arch2018 script https://github.com/ordanax/arch2018
+
+Consists of 2 parts
+
+# Installation
+1) Download and burn the Arch Linux ISO image on a USB flash drive https://www.archlinux.org/download/
+2) Download and run the script with the command:
+   `` bash
+   wget git.io/fjUo1 && sh fjUo1.sh
+   `` `
+   The installation of the minimum system with DE XFCE starts.
+   Part 2 is automatically installed and this is the basic installation of ArchLinux without programs and settings.
+
+
+# Customize the script for yourself
+You can fork this script. Change disk layout to fit your needs, upload it to Github and perform a quick reinstall of your system.
+Upon completion of the script, you get your ready-made system.
+
+# ATTENTION!
+The author is not responsible for any harm when using the script. Use it at your own risk and having previously studied it and, if necessary, changing it for your personal needs.
+
+Before starting, carefully check the disk layout used in this script and change it if necessary.
+Script is designed for re-installing ARCH LINUX with the MBR partitioning already created and formatting boot, swap, root partitions:
+sda1 boot (formatted)
+sda2 swap (formatted)
+sda3 root (formatted)
+sda4 extended
+sda5 home (no formatting)
+
+
+
+#################################################
+# ArchLinux Fast reinstall v1.0.0 (RU)
 #################################################
 
 # Описание
@@ -42,9 +88,6 @@ sda2 swap (форматируется)
 sda3 root (форматируется)
 sda4 extended
 sda5 home (форматирование не производится)
-
-Если вам не подходит автоматическая разметка дисков, тогда вам, предварительно нужно сделать разметку дисков и настроить скрипт под свои нужды (программы, XFCE config и т.д.)
-Смотрите пометки в самом скрипте.
 
 
 # История изменений
