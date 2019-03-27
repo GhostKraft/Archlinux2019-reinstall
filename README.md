@@ -19,7 +19,7 @@ Cостоит из 2 частей: часть1- https://git.io/fjUo1  | част
 2) Скачать и запустить скрипт командой:
 
    ```bash 
-   wget git.io/fjUo1.sh && sh fjUo1.sh
+   wget git.io/fjUo1 && sh fjUo1
    ```
 
 Запустится установка минимальной системы с DE XFCE.
@@ -71,7 +71,7 @@ Consists of 2 parts: part1- https://git.io/fjUo1 | part2- https://git.io/fjUoD
 2) Download and run the script with the command:
 
    ``` bash
-   wget git.io/fjUo1.sh && sh fjUo1.sh
+   wget git.io/fjUo1 && sh fjUo1
    ```
 
 The installation of the minimum system with DE XFCE starts.
