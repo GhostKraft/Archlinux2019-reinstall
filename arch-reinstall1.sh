@@ -28,6 +28,7 @@ swapon /dev/sda2
 
 echo '3.1 Выбор зеркал для загрузки. Ставим зеркало от Яндекс'
 echo "Server = http://mirror.yandex.ru/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+
 echo '3.2 Установка основных пакетов'
 pacstrap /mnt base base-devel
 
