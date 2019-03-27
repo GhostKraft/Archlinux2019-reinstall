@@ -2,6 +2,7 @@
 
 # Arch Linux Fast reinstall - Быстрая переустановка Arch Linux
 # Цель скрипта - быстрая переустановка системы на уже созданные разделы (с учетом того что home вынесен отдельно) без форматирования home с целью сохранения личных данных и файлов
+# Автор форка GhostKraft https://github.com/GhostKraft
 
 loadkeys ru
 setfont cyr-sun16
@@ -34,4 +35,4 @@ pacstrap /mnt base base-devel
 echo '3.3 Настройка системы, создание FSTAB'
 genfstab -U /mnt >> /mnt/etc/fstab
 
-arch-chroot /mnt sh -c "$(curl -fsSL git.io/fjUoD.sh)"
+arch-chroot /mnt sh -c "$(curl -fsSL git.io/fjUoD)"
