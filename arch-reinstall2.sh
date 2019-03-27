@@ -53,7 +53,7 @@ pacman -Syy
 echo 'Ставим иксы и драйвера'
 pacman -S xorg-server xorg-drivers --noconfirm
 
-echo 'Ставим Xfce, LXDM'
+echo 'Ставим Xfce, lightdm'
 pacman -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
 echo 'Ставим шрифты'
