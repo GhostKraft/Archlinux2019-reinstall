@@ -4,7 +4,9 @@ read -p "Введите имя пользователя: " username
 
 echo 'Прописываем имя компьютера'
 echo $hostname > /etc/hostname
-ln -svf /usr/share/zoneinfo/Asia/Yekaterinburg /etc/localtime
+
+echo 'Выбираем часовой пояс'
+ln -svf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 
 echo '3.4 Добавляем русскую локаль системы'
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
@@ -58,7 +60,7 @@ echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm
 
 echo 'Ставим менеджер сети'
-pacman -S networkmanager network-manager-applet ppp
+pacman -S networkmanager network-manager-applet ppp --noconfirm
 
 echo 'Подключаем автозагрузку менеджера входа и интернет'
 systemctl enable lightdm.service NetworkManager
