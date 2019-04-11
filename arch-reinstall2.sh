@@ -53,8 +53,11 @@ pacman -Syy
 echo 'Ставим иксы и драйвера'
 pacman -S xorg-server xorg-drivers xorg-xinit
 
-echo 'Ставим Xfce, lightdm'
-pacman -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
+echo 'lightdm'
+pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
+
+echo 'Ставим i3'
+pacman -S i3 nitrogen lxappearance viewnior xfce-4-terminal rofi xfce4-appfinder polkit --noconfirm 
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm
