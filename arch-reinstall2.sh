@@ -57,7 +57,10 @@ echo 'lightdm'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
 echo 'Ставим i3'
-pacman -S i3 thunar gvfs nitrogen lxappearance viewnior xfce-4-terminal rofi xfce4-appfinder polkit --noconfirm 
+pacman -S i3-gaps i3status i3blocks i3lock dmenu --noconfirm 
+
+echo 'Ставим programs'
+pacman -S thunar gvfs nitrogen lxappearance viewnior rofi xfce4-appfinder xfce-4-terminal --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm
