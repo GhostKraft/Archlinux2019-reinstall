@@ -56,11 +56,8 @@ pacman -S xorg-server xorg-drivers xorg-xinit
 echo 'lightdm'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
-echo 'Ставим i3'
-pacman -S i3-gaps i3status i3blocks i3lock dmenu --noconfirm 
-
-echo 'Ставим programs'
-pacman -S thunar gvfs nitrogen lxappearance viewnior rofi xfce4-appfinder xfce4-terminal --noconfirm
+echo 'Ставим xfce'
+pacman -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm
