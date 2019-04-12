@@ -57,7 +57,7 @@ echo 'lightdm'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
 echo 'Ставим xfce'
-pacman -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
+pacman -S xfce4 xfce4-goodies --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm
