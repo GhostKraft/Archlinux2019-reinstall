@@ -7,7 +7,7 @@
 
 Разметка MBR BIOS: sda1 boot | sda2 swap | sda3 root | sda4 extended | sda5 home
 
-Графическое окружение i3-wm, экран входа lightdm.
+Графическое окружение XFCE, экран входа lightdm.
 
 Данный скрипт является форком скрипта ordanax/arch2018 https://github.com/ordanax/arch2018 
 
@@ -57,7 +57,7 @@ This script will reinstall the system on already created partitions without form
 
 MBR markup with BIOS: sda1 boot | sda2 swap | sda3 root | sda4 extended | sda5 home 
 
- i3-wm graphic environment 
+XFCE graphic environment 
 
 Lightdm login screen 
 
