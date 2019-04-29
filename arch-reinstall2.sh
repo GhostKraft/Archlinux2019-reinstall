@@ -56,11 +56,15 @@ pacman -S xorg-server xorg-drivers xorg-xinit
 echo 'lightdm'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
-echo 'Ставим XFCE'
-sudo pacman -S --noconfirm xfce4 xfce4-goodies
+echo 'Ставим fluxbox'
+sudo pacman -S fluxbox
+
+echo 'Ставим Дополнительное ПО'
+
+sudo pacman -S volumeicon network-manager-applet gxkb polkit-gnome orage viewnior thunar lxappearance nitrogen xfce4-screenshooter xdce4-terminal rofi xorg-xev conky xfce4-taskmanager --noconfirm
 
 echo 'Ставим шрифты'
-pacman -S ttf-liberation ttf-dejavu --noconfirm
+pacman -S ttf-liberation ttf-dejavu --noconfirm 
 
 echo 'Ставим менеджер сети'
 pacman -S networkmanager network-manager-applet ppp --noconfirm
