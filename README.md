@@ -7,7 +7,7 @@
 
 Разметка MBR BIOS: sda1 boot | sda2 swap | sda3 root | sda4 extended | sda5 home
 
-Графическое окружение XFCE, экран входа lightdm.
+Вместо окружения рабочего стола исмользуем WM FLUXBOX, экран входа lightdm.
 
 Данный скрипт является форком скрипта ordanax/arch2018 https://github.com/ordanax/arch2018 
 
@@ -21,7 +21,7 @@ Cостоит из 2 частей: часть1- https://git.io/fjUo1  | част
    wget git.io/fjUo1 && sh fjUo1
    ```
 
-Запустится установка минимальной системы с DE XFCE.
+Запустится установка минимальной системы с WM FLUXBOX.
 
 2-я часть ставится автоматически и это базовая установка ArchLinux без программ и настроек, но с возможностью выбора имени компьютера и пользователя, а так же установкой паролей. 
 
@@ -57,8 +57,7 @@ This script will reinstall the system on already created partitions without form
 
 MBR markup with BIOS: sda1 boot | sda2 swap | sda3 root | sda4 extended | sda5 home 
 
-XFCE graphic environment 
-
+WM FLUXBOX
 Lightdm login screen 
 
 This script is a fork of the ordanax / arch2018 script https://github.com/ordanax/arch2018
@@ -73,7 +72,7 @@ Consists of 2 parts: part1- https://git.io/fjUo1 | part2- https://git.io/fjUoD
    wget git.io/fjUo1 && sh fjUo1
    ```
 
-The installation of the minimum system with DE XFCE starts.
+The installation of the minimum system with WM FLUXBOX.
    
 Part 2 is automatically installed and this is the basic installation of ArchLinux without programs and settings.
 
