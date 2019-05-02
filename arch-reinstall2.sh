@@ -60,7 +60,7 @@ echo 'Ставим fluxbox'
 sudo pacman -S fluxbox
 
 echo 'Ставим Дополнительное ПО'
-sudo pacman -S volumeicon network-manager-applet gxkb dunst polkit-gnome orage viewnior thunar lxappearance nitrogen xfce4-screenshooter xfce4-terminal rofi xorg-xev conky xfce4-taskmanager leafpad --noconfirm
+sudo pacman -S pcmanfm volumeicon dunst gxkb polkit-gnome osmo viewnior lxappearance nitrogen flameshot sakura rofi xorg-xev conky lxtask leafpad --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm 
