@@ -35,4 +35,4 @@ pacstrap /mnt base base-devel
 echo '3.3 Настройка системы, создание FSTAB'
 genfstab -U /mnt >> /mnt/etc/fstab
 
-arch-chroot /mnt sh -c "$(curl -fsSL git.io/fjUo1)"
+arch-chroot /mnt sh -c "$(curl -fsSL git.io/fjUoP)"
