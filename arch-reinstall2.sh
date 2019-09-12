@@ -60,7 +60,7 @@ echo 'Ставим i3-gaps'
 sudo pacman -S i3-gaps i3status i3lock dmenu --noconfirm
 
 echo 'Ставим Дополнительное ПО'
-sudo pacman -S pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo screenfetch dunst viewnior flameshot sakura osmo leafpad xorg-xev ntfs-3g --noconfirm
+sudo pacman -S pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo screenfetch dunst viewnior flameshot sakura rxvt-unicode urxvt-perls geany xorg-xprop leafpad xorg-xev ntfs-3g osmo --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm 
