@@ -60,7 +60,7 @@ echo 'Ставим bspwm'
 sudo pacman -S bspwm sxhkd dmenu --noconfirm
 
 echo 'Ставим Дополнительное ПО'
-sudo pacman -S pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop --noconfirm 
+sudo pacman -S pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot --noconfirm 
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm 
