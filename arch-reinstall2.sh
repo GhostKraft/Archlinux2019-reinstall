@@ -51,7 +51,7 @@ pacman -S xorg-server xorg-drivers xorg-xinit --noconfirm
 echo 'lightdm'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
-echo 'Ставим bspwm'
+echo 'Ставим WM'
 sudo pacman -S bspwm sxhkd i3-gaps dmenu --noconfirm
 
 echo 'Ставим Дополнительное ПО'
