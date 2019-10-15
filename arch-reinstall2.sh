@@ -59,7 +59,7 @@ pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
 echo 'Ставим bspwm'
 sudo pacman -S bspwm sxhkd dmenu --noconfirm
-mkdir -p /home/$hostname/.config/sxhkd
+mkdir -p /home/$username/.config/sxhkd
 cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
 chmod x /home/$username/.config/bspwm/bspwmrc
