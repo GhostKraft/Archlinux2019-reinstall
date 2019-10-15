@@ -60,9 +60,9 @@ pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 echo 'Ставим bspwm'
 sudo pacman -S bspwm sxhkd dmenu --noconfirm
 mkdir -p /home/$hostname/.config/sxhkd
-cp /usr/share/doc/bspwm/examples/bspwmrc /home/$hostname/.config/bspwm/
-cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$hostname/.config/sxhkd/
-chmod x /home/$hostname/.config/bspwm/bspwmrc
+cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
+chmod x /home/$username/.config/bspwm/bspwmrc
 
 echo 'Ставим Дополнительное ПО'
 sudo pacman -S pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru gsimplecal --noconfirm 
