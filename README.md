@@ -9,7 +9,7 @@
 
 Разметка MBR BIOS: sda1 boot | sda2 swap | sda3 root | sda4 extended / sda5 home
 
-Вместо окружения рабочего стола исмользуем WM i3-gaps, экран входа lightdm.
+Oкружение рабочего стола и оконный менеджер на выбор Bswm, i3-gaps, Openbox, Xfce, JWM, экран входа lightdm.
 
 Данный скрипт является форком скрипта ordanax/arch2018 https://github.com/ordanax/arch2018 
 
@@ -59,7 +59,7 @@ This script will reinstall the system on already created partitions without form
 
 MBR markup with BIOS: sda1 boot | sda2 swap | sda3 root | sda4 extended / sda5 home 
 
-WM i3-gaps
+Bswm, i3-gaps, Openbox, Xfce, JWM,
 Lightdm login screen 
 
 This script is a fork of the ordanax / arch2018 script https://github.com/ordanax/arch2018
@@ -98,11 +98,3 @@ sda3 root (formatted)
 sda4 extended
 
 sda5 home (no formatting)
-
-
-
-# История изменений (Change History)
-
-### 27.03.2019 Archlinux2019-reinstall v1.0.0
-
-- Релиз (Release)
