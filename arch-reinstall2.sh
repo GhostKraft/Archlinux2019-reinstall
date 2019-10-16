@@ -52,7 +52,7 @@ echo 'lightdm'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
 echo "ВЫБИРАЕМ окнонный менеджер или окружение WM/DE"
-read -p "1 - BSPWM, 2 - I3-GAPS, 3 - Openbox, 4 - XFCE: " vm_setting
+read -p "1 - BSPWM, 2 - I3-GAPS, 3 - Openbox, 4 - XFCE, 5 - JWM: " vm_setting
 if [[ $vm_setting == 1 ]]; then
   sudo pacman -S bspwm sxhkd dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru gsimplecal --noconfirm
 mkdir -p /home/$username/.config/{bspwm,sxhkd}
@@ -70,6 +70,9 @@ echo 'OPENBOX успешно установлено'
 elif [[ $vm_setting == 4 ]]; then  
   pacman -S xfce4 polkit-gnome gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls viewnior flameshot leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ctxorg-xsetroot firefox firefox-i18n-ru --noconfirm
 echo 'XFCE успешно установлено'
+elif [[ $vm_setting == 5 ]]; then  
+  pacman -S sudo pacman -S jwm gsimplecal xxkb volumeicon dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru --noconfirm
+echo 'JWM успешно установлено'
 fi
 
 
