@@ -54,7 +54,7 @@ pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 echo "ВЫБИРАЕМ окнонный менеджер или окружение WM/DE"
 read -p "1 - BSPWM, 2 - I3-GAPS, 3 - Openbox, 4 - XFCE, 5 - JWM: " vm_setting
 if [[ $vm_setting == 1 ]]; then
-  sudo pacman -S bspwm sxhkd dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru gsimplecal --noconfirm
+  pacman -S bspwm sxhkd dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru gsimplecal --noconfirm
 mkdir -p /home/$username/.config/{bspwm,sxhkd}
 cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
@@ -62,16 +62,16 @@ chmod +x /home/$username/.config/bspwm/bspwmrc
 chown -R $username:users /home/$username/.config/
 echo 'BSPWM успешно установлено'
 elif [[ $vm_setting == 2 ]]; then
-  sudo pacman -S i3-gaps i3status dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru gsimplecal --noconfirm
+  pacman -S i3-gaps i3status dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru gsimplecal --noconfirm
 echo 'I3-gaps успешно установлено'
 elif [[ $vm_setting == 3 ]]; then  
-  sudo pacman -S openbox obconf tint2 gsimplecal geany lxappearance-obconf xxkb dunst rofi pcmanfm rxvt-unicode urxvt-perls volumeicon xxkb polkit-gnome viewnior lxappearance lxappearance-obconf nitrogen flameshot ntfs-3g lxtask gcolor3 leafpad xorg-xev neofetch conky gsimplecal --noconfirm
+  pacman -S openbox obconf tint2 gsimplecal geany lxappearance-obconf xxkb dunst rofi pcmanfm rxvt-unicode urxvt-perls volumeicon xxkb polkit-gnome viewnior lxappearance lxappearance-obconf nitrogen flameshot ntfs-3g lxtask gcolor3 leafpad xorg-xev neofetch conky gsimplecal --noconfirm
 echo 'OPENBOX успешно установлено'
 elif [[ $vm_setting == 4 ]]; then  
   pacman -S xfce4 polkit-gnome gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls viewnior flameshot leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ctxorg-xsetroot firefox firefox-i18n-ru --noconfirm
 echo 'XFCE успешно установлено'
 elif [[ $vm_setting == 5 ]]; then  
-  sudo pacman -S jwm gsimplecal xxkb volumeicon dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru --noconfirm
+  pacman -S jwm gsimplecal xxkb volumeicon dmenu pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch xorg-xrandr rxvt-unicode urxvt-perls dunst viewnior flameshot sakura leafpad xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct mpd mpc ncmpcpp slop xorg-xsetroot firefox firefox-i18n-ru --noconfirm
 echo 'JWM успешно установлено'
 fi
 
