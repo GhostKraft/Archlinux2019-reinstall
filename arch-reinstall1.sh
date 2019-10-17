@@ -33,6 +33,6 @@ echo '3.2 Установка основных пакетов и ядра'
 pacstrap /mnt base base-devel linux linux-firmware dhcpcd nano
 
 echo '3.3 Настройка системы, создание FSTAB'
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -pU /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt sh -c "$(curl -fsSL git.io/fjUoD)"
