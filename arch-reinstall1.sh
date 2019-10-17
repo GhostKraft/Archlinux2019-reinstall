@@ -4,8 +4,8 @@
 # Цель скрипта - быстрая переустановка системы на уже созданные разделы (с учетом того что home вынесен отдельно) без форматирования home с целью сохранения личных данных и файлов
 # Автор форка GhostKraft https://github.com/GhostKraft
 
-loadkeys ru
 setfont cyr-sun16
+loadkeys ru
 echo 'Скрипт сделан на основе скрипта Бойко Алексея Arch Linux Fast Install https://github.com/ordanax/arch2018'
 
 echo '2.3 Синхронизация системных часов'
