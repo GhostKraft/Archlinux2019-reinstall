@@ -28,12 +28,11 @@ swapon /dev/sda2
 
 echo '3.1 Выбор зеркал для загрузки. Ставим зеркало от Яндекс'
 echo "Server = https://mirror.yandex.ru/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
-pacman -Syyu
 
 echo '3.2 Установка основных пакетов и ядра'
 pacstrap /mnt base base-devel linux linux-firmware dhcpcd nano
 
 echo '3.3 Настройка системы, создание FSTAB'
-genfstab -pU /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt sh -c "$(curl -fsSL git.io/fjUoD)"
