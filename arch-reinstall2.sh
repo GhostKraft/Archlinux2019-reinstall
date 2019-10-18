@@ -85,5 +85,5 @@ pacman -S networkmanager network-manager-applet ppp --noconfirm
 echo 'Подключаем автозагрузку менеджера входа и интернет'
 systemctl enable lightdm.service NetworkManager
 
-echo 'Установка завершена! Перезагрузите систему.'
+echo 'Установка завершена! Перезагрузите систему reboot.'
 exit
