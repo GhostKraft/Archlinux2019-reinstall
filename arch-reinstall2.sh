@@ -19,7 +19,7 @@ echo "FONT=cyr-sun16" >> /etc/vconsole.conf
 
 
 echo 'Создадим загрузочный RAM диск'
-mkinitcpio -p linux
+mkinitcpio -p linux-lts
 
 echo '3.5 Устанавливаем загрузчик'
 pacman -Syy
