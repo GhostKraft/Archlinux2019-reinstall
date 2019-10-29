@@ -23,9 +23,9 @@ Cостоит из 2 частей: часть1- https://git.io/fjUo1  | част
    wget git.io/fjUo1 && sh fjUo1
    ```
 
-Запустится установка минимальной системы с WM FLUXBOX.
+Запустится установка минимальной системы.
 
-2-я часть ставится автоматически и это базовая установка ArchLinux без программ и настроек, но с возможностью выбора имени компьютера и пользователя, а так же установкой паролей. 
+2-я часть ставится автоматически и это базовая установка ArchLinux с базовым софтом, с возможностью выбора имени компьютера и пользователя, а так же установкой паролей. 
 
 # Настройка скрипта под себя
 Вы можете форкнуть этот срипт. Изменить разметку дисков под свои нужды, залить его на Github и производить быструю переустановку вашей системы.
@@ -74,9 +74,9 @@ Consists of 2 parts: part1- https://git.io/fjUo1 | part2- https://git.io/fjUoD
    wget git.io/fjUo1 && sh fjUo1
    ```
 
-The installation of the minimum system with WM FLUXBOX.
+The installation of the minimum system .
    
-Part 2 is automatically installed and this is the basic installation of ArchLinux without programs and settings.
+Part 2 is automatically installed and this is the basic installation of ArchLinux.
 
 
 # Customize the script for yourself
