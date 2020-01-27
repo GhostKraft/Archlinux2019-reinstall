@@ -66,7 +66,7 @@ elif [[ $vm_setting == 2 ]]; then
   pacman -S i3-gaps i3status dmenu rxvt-unicode urxvt-perls --noconfirm
 echo 'I3-gaps успешно установлено'
 elif [[ $vm_setting == 3 ]]; then  
-  pacman -S openbox obconf tint2 lxappearance lxappearance-obconf rxvt-unicode urxvt-perls --noconfirm
+  pacman -S openbox obconf tint2 lxappearance lxappearance-obconf dmenu rxvt-unicode urxvt-perls --noconfirm
 echo 'OPENBOX успешно установлено'
 elif [[ $vm_setting == 4 ]]; then  
   pacman -S xfce4 rxvt-unicode urxvt-perls --noconfirm
