@@ -55,7 +55,7 @@ pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 echo "ВЫБИРАЕМ окнонный менеджер или окружение WM/DE"
 read -p "1 - BSPWM, 2 - I3-GAPS, 3 - Openbox, 4 - XFCE, 5 - JWM: " vm_setting
 if [[ $vm_setting == 1 ]]; then
-  pacman -S bspwm sxhkd dmenu rxvt-unicode urxvt-perls --noconfirm 
+  pacman -S bspwm sxhkd dmenu rxvt-unicode urxvt-perls lxappearance slop --noconfirm 
 mkdir -p /home/$username/.config/{bspwm,sxhkd}
 cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
@@ -63,10 +63,10 @@ chmod +x /home/$username/.config/bspwm/bspwmrc
 chown -R $username:users /home/$username/.config/
 echo 'BSPWM успешно установлено'
 elif [[ $vm_setting == 2 ]]; then
-  pacman -S i3-gaps i3status dmenu rxvt-unicode urxvt-perls --noconfirm
+  pacman -S i3-gaps i3status dmenu rxvt-unicode urxvt-perls lxappearance --noconfirm
 echo 'I3-gaps успешно установлено'
 elif [[ $vm_setting == 3 ]]; then  
-  pacman -S openbox obconf tint2 lxappearance lxappearance-obconf dmenu rxvt-unicode urxvt-perls --noconfirm
+  pacman -S openbox tint2 lxappearance lxappearance-obconf obconf dmenu rxvt-unicode urxvt-perls --noconfirm
 echo 'OPENBOX успешно установлено'
 elif [[ $vm_setting == 4 ]]; then  
   pacman -S xfce4 rxvt-unicode urxvt-perls --noconfirm
@@ -77,7 +77,7 @@ echo 'JWM успешно установлено'
 fi
 
 echo 'Ставим базовый софт'
-pacman -S pcmanfm lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch dunst viewnior flameshot leafpad xorg-xrandr xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct audacious mpv xreader slop xorg-xsetroot firefox firefox-i18n-ru gsimplecal p7zip unrar tar file-roller --noconfirm
+pacman -S pcmanfm nitrogen polkit-gnome lxtask gparted hardinfo neofetch dunst viewnior flameshot leafpad xorg-xrandr xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct audacious mpv xreader xorg-xsetroot firefox firefox-i18n-ru gsimplecal p7zip unrar tar file-roller --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu ttf-droid ttf-hack --noconfirm 
