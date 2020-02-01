@@ -83,7 +83,7 @@ echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu ttf-droid ttf-hack --noconfirm 
 
 echo 'Ставим менеджер сети'
-pacman -S networkmanager network-manager-applet ppp --noconfirm
+pacman -S networkmanager ppp --noconfirm
 
 echo 'Подключаем автозагрузку менеджера входа и интернет'
 systemctl enable lightdm.service NetworkManager
