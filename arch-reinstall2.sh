@@ -49,7 +49,10 @@ pacman -Syy
 echo 'Ставим иксы и драйвера'
 pacman -S xorg xorg-server xorg-apps --noconfirm
 
-echo 'lightdm'
+echo 'Ставим драйвера видеокарты'
+sudo pacman -S xf86-video-intel libva-intel-driver libva
+
+echo 'Устанавливаем экранный менеджер'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 
 echo "ВЫБИРАЕМ окнонный менеджер или окружение WM/DE"
