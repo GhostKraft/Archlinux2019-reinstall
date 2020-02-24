@@ -58,7 +58,7 @@ pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 echo "ВЫБИРАЕМ окнонный менеджер или окружение WM/DE"
 read -p "1 - BSPWM, 2 - I3-GAPS, 3 - Openbox, 4 - XFCE, 5 - JWM: " vm_setting
 if [[ $vm_setting == 1 ]]; then
-  pacman -S bspwm sxhkd dmenu rxvt-unicode urxvt-perls lxappearance slop --noconfirm 
+  pacman -S bspwm sxhkd dmenu sakura lxappearance slop --noconfirm 
 mkdir -p /home/$username/.config/{bspwm,sxhkd}
 cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
@@ -66,16 +66,16 @@ chmod +x /home/$username/.config/bspwm/bspwmrc
 chown -R $username:users /home/$username/.config/
 echo 'BSPWM успешно установлено'
 elif [[ $vm_setting == 2 ]]; then
-  pacman -S i3-gaps i3status dmenu rxvt-unicode urxvt-perls lxappearance --noconfirm
+  pacman -S i3-gaps i3status dmenu sakura lxappearance --noconfirm
 echo 'I3-gaps успешно установлено'
 elif [[ $vm_setting == 3 ]]; then  
-  pacman -S openbox tint2 lxappearance lxappearance-obconf dmenu rxvt-unicode urxvt-perls --noconfirm
+  pacman -S openbox tint2 lxappearance lxappearance-obconf dmenu sakura --noconfirm
 echo 'OPENBOX успешно установлено'
 elif [[ $vm_setting == 4 ]]; then  
-  pacman -S xfce4 rxvt-unicode urxvt-perls --noconfirm
+  pacman -S xfce4 sakura --noconfirm
 echo 'XFCE успешно установлено'
 elif [[ $vm_setting == 5 ]]; then  
-  pacman -S jwm dmenu rxvt-unicode urxvt-perls --noconfirm
+  pacman -S jwm dmenu sakura --noconfirm
 echo 'JWM успешно установлено'
 fi
 
