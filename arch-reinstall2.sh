@@ -58,7 +58,7 @@ pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
 echo "ВЫБИРАЕМ окнонный менеджер или окружение WM/DE"
 read -p "1 - BSPWM, 2 - I3-GAPS, 3 - Openbox, 4 - XFCE, 5 - JWM: " vm_setting
 if [[ $vm_setting == 1 ]]; then
-  pacman -S bspwm sxhkd slop --noconfirm 
+  pacman -S bspwm sxhkd slop rxvt-unicode --noconfirm 
 mkdir -p /home/$username/.config/{bspwm,sxhkd}
 cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
@@ -66,7 +66,7 @@ chmod +x /home/$username/.config/bspwm/bspwmrc
 chown -R $username:users /home/$username/.config/
 echo 'BSPWM успешно установлено'
 elif [[ $vm_setting == 2 ]]; then
-  pacman -S i3-gaps i3status --noconfirm
+  pacman -S i3-gaps i3blocks --noconfirm
 echo 'I3-gaps успешно установлено'
 elif [[ $vm_setting == 3 ]]; then  
   pacman -S openbox tint2 lxappearance lxappearance-obconf --noconfirm
@@ -80,16 +80,13 @@ echo 'JWM успешно установлено'
 fi
 
 echo 'Ставим базовый софт'
-pacman -S xfce4-terminal pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo dunst viewnior flameshot geany ntfs-3g mtools bash-completion qt5-styleplugins qt5ct xorg-xsetroot firefox firefox-i18n-ru gsimplecal unrar tar file-roller --noconfirm
+pacman -S rxvt-unicode pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo dunst viewnior flameshot geany ntfs-3g mtools bash-completion qt5-styleplugins qt5ct xorg-xsetroot firefox firefox-i18n-ru gsimplecal unrar tar file-roller --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu ttf-droid ttf-hack --noconfirm 
 
-echo 'Ставим менеджер сети'
-pacman -S networkmanager nm-connection-editor ppp --noconfirm
-
 echo 'Подключаем автозагрузку менеджера входа и интернет'
-systemctl enable lightdm.service NetworkManager
+systemctl enable lightdm.service dhcpcd.service
 
 echo 'Установка завершена! Перезагрузите систему reboot.'
 exit
