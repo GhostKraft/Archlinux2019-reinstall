@@ -80,7 +80,7 @@ echo 'JWM успешно установлено'
 fi
 
 echo 'Ставим базовый софт'
-pacman -S pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch dunst viewnior flameshot leafpad xorg-xrandr xorg-xev ntfs-3g bash-completion qt5-styleplugins qt5ct audacious mpv xreader xorg-xsetroot firefox firefox-i18n-ru gsimplecal p7zip unrar tar file-roller --noconfirm
+pacman -S xfce4-terminal pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo neofetch dunst viewnior flameshot geany ntfs-3g bash-completion qt5-styleplugins qt5ct xorg-xsetroot firefox firefox-i18n-ru gsimplecal unrar tar file-roller --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu ttf-droid ttf-hack --noconfirm 
