@@ -80,7 +80,7 @@ echo 'JWM успешно установлено'
 fi
 
 echo 'Ставим базовый софт'
-pacman -S rxvt-unicode pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo dunst viewnior flameshot geany ntfs-3g mtools bash-completion qt5-styleplugins qt5ct xorg-xsetroot firefox firefox-i18n-ru gsimplecal unrar tar file-roller --noconfirm
+pacman -S termite pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted hardinfo dunst viewnior flameshot geany ntfs-3g mtools bash-completion qt5-styleplugins qt5ct xorg-xsetroot firefox firefox-i18n-ru gsimplecal unrar tar file-roller --noconfirm
 
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu ttf-droid ttf-hack --noconfirm 
