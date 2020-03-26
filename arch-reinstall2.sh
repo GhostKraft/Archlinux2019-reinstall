@@ -49,8 +49,8 @@ pacman -Syy
 echo 'Ставим иксы и драйвера'
 pacman -S xorg-server xorg-apps xorg-xinit --noconfirm
 
-echo 'Ставим драйвера видеокарты'
-sudo pacman -S xf86-video-intel --noconfirm
+echo 'Ставим драйвера видеокарты intel'
+sudo pacman -S xf86-video-intel vdpauinfo libva-utils libva-intel-driver libva lib32-libva-intel-driver libvdpau libvdpau-va-gl lib32-libvdpau --noconfirm
 
 echo 'Устанавливаем экранный менеджер'
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm
