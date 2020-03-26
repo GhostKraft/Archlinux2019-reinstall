@@ -69,7 +69,7 @@ elif [[ $vm_setting == 2 ]]; then
   pacman -S i3-gaps i3blocks --noconfirm
 echo 'I3-gaps успешно установлено'
 elif [[ $vm_setting == 3 ]]; then  
-  pacman -S openbox tint2 lxappearance lxappearance-obconf --noconfirm
+  pacman -S openbox tint2 lxappearance lxappearance-obconf python-xdg --noconfirm
 echo 'OPENBOX успешно установлено'
 elif [[ $vm_setting == 4 ]]; then  
   pacman -S xfce4 --noconfirm
