@@ -47,7 +47,7 @@ echo 'Include = /etc/pacman.d/mirrorlist' >> /etc/pacman.conf
 pacman -Syy
 
 echo 'Ставим иксы и драйвера'
-pacman -S xorg-server xorg-apps xorg-xinit --noconfirm
+pacman -S xorg xorg-server xorg-apps xorg-xinit --noconfirm
 
 echo 'Ставим драйвера видеокарты intel'
 sudo pacman -S xf86-video-intel vdpauinfo libva-utils libva-intel-driver libva lib32-libva-intel-driver libvdpau libvdpau-va-gl lib32-libvdpau --noconfirm
