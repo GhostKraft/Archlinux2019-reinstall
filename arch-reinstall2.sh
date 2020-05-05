@@ -85,8 +85,11 @@ pacman -S termite pcmanfm rofi lxappearance nitrogen polkit-gnome lxtask gparted
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu ttf-droid ttf-hack --noconfirm 
 
+echo 'Ставим NetworkManager'
+pacman -S networkmanager nm-connection-editor ppp --noconfirm 
+
 echo 'Подключаем автозагрузку менеджера входа и интернет'
-systemctl enable lightdm.service dhcpcd.service
+systemctl enable lightdm.service NetworkManager
 
 echo 'Установка завершена! Перезагрузите систему reboot.'
 exit
